@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.danieloh.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Badge">
+        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
+    <feature name="SQLitePlugin">
+        <param name="android-package" value="io.sqlc.SQLitePlugin" />
+    </feature>
+    <name>DOH.Notif</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="mdpi" src="res\icon\android\ic_rd_launcher_push_notif_mdpi.png" />
+    <icon density="hdpi" src="res\icon\android\ic_rd_launcher_push_notif_hdpi.png" />
+    <icon density="xhdpi" src="res\icon\android\ic_rd_launcher_push_notif_xhdpi.png" />
+    <icon density="xxhdpi" src="res\icon\android\ic_rd_launcher_push_notif_xxhdpi.png" />
+    <icon density="xxxhdpi" src="res\icon\android\ic_rd_launcher_push_notif_xxxhdpi.png" />
+    <splash density="land-hdpi" src="res/screen/android/hdpiland.png" />
+    <splash density="land-ldpi" src="res/screen/android/ldpiland.png" />
+    <splash density="land-mdpi" src="res/screen/android/mdpiland.png" />
+    <splash density="land-xhdpi" src="res/screen/android/xhdpiland.png" />
+    <splash density="port-hdpi" src="res/screen/android/hdpiport.png" />
+    <splash density="port-ldpi" src="res/screen/android/ldpiport.png" />
+    <splash density="port-mdpi" src="res/screen/android/mdpiport.png" />
+    <splash density="port-xhdpi" src="res/screen/android/xhdpiport.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

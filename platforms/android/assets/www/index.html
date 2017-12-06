@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Notifications Exercise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<!---->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+	
+    <!-- Include the jQuery library -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-custom/jquery-ui.min.css">
+	
+    <!-- Include the jQuery Mobile library -->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery-ui-custom/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/locale/es.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Theme_notif.min.css">
+    <!--<link rel="stylesheet" href="jquery-ui-custom/jquery-ui.structure.min.css">-->
+</head>
+
+<body>
+<div data-role="page" id="mainpage" data-theme="b">
+	<div data-role="header" data-theme="c">
+		<h1 class="ui-title">· Notifications ex ·</h1>
+	</div>
+	<div role="main" class="ui-content">
+        <input type="button" class="ui-button" value="Date Selector" id="LoadDateSelector">
+        <input type="button" class="ui-button" value="sqlLite Database" id="LoadsqlLite">
+ 		<div>
+    		<ul data-role="listview" id="myList">
+			</ul>
+    	</div>
+	</div>
+</div>
+
+<!-- Start of second page -->
+<div data-role="page" id="pagetwo" data-theme="b">
+	<div data-role="header" data-theme="c">
+		<h1 class="ui-title">Date/Hour Selector</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<p>Date: <input type="text" id="datepicker" data-theme="c"></p>
+		<p><a href="#mainpage">Back to Main Page</a></p>
+        <input type="button" class="ui-button" value="Send" id="ShowNotification">
+	</div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

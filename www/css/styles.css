@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+
+#LoadsqlLite {
+	margin-top: 15px;
+}
+
+.ui-title {
+  margin: 0.8em 10% 0.8em !important;
+  font-family: 'Spectral SC', serif;
+}
+
